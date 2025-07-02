@@ -1,0 +1,88 @@
+.skills{
+    margin: 40px 10%;
+}
+
+.skills h2{
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skill-list{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap:50px;
+}
+
+.skil-List{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.skil-List:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px 8px #da7d25a3;
+}
+
+.for-display{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.for-display ul li{
+    list-style: none;
+    gap: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.education{
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.education:hover{
+    padding: 10px;
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px 8px #da7d25a3;
+}
+
+.education-list{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.education-list h3{
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.education-list p{
+    padding: 5px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1034px){
+    .skill-list{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:785px){
+    .for-display{
+    grid-template-columns: repeat(2,1fr);
+}
+}

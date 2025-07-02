@@ -1,0 +1,124 @@
+.contect h1{
+    color: #fff;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.contect-sections{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contect-text{
+    margin: 30px 30px;
+    width: 40%;
+}
+
+.contect-text h2{
+    font-size: 42px;
+    font-weight: 400;
+    color: #DA7C25;
+}
+
+.contect p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contect-info{
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contect-form{
+    margin-top: 30px;
+}
+
+.contect-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contect-form form label{
+    color: #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contect-form form input{
+    border: none;
+    width: 600px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 18px;
+}
+
+.contect-form form textarea{
+    width: 600px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 18px;
+}
+
+.submit-button{
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #DA7C25;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1014px){
+    .contect-sections{
+    justify-content: start;
+}
+
+    .contect-text{
+    margin: 30px 30px;
+    width: 100%;
+}
+    .contect p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+    .contect-info{
+    flex-direction: row;
+    gap: 20px;
+}
+    .contect-form{
+        display: none;
+}
+}
+
+@media (max-width:785px){
+    .contect-info{
+    flex-direction: column;
+}
+}
