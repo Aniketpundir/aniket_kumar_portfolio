@@ -1,5 +1,8 @@
 import React from "react";
 import "./contect.css";
+import location from "../../assets/location_icon.svg";
+import mail from "../../assets/mail_icon.svg";
+import call from "../../assets/call_icon.svg";
 
 const Contect = () => {
   const [result, setResult] = React.useState("");
@@ -41,9 +44,15 @@ const Contect = () => {
             </p>
             <hr />
             <div className="contect-info">
-              <span>aniketpundir348@gmail.com</span>
-              <span>+91 9528745292</span>
-              <span>Muzaffarnagar, Uttar Pradesh</span>
+              <span>
+                <img src={mail} /> aniketpundir348@gmail.com
+              </span>
+              <span>
+                <img src={call} /> +91 9528745292
+              </span>
+              <span>
+                <img src={location} /> Muzaffarnagar, Uttar Pradesh
+              </span>
             </div>
           </div>
           <div className="contect-form">

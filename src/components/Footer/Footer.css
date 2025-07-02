@@ -43,6 +43,10 @@
     margin: 10px;
 }
 
+.some-links a{
+    text-decoration: none;
+}
+
 @media (max-width:1013px){
 
     .footer-left{
