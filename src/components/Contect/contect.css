@@ -94,7 +94,7 @@ hr{
     margin-bottom: 20px;
 }
 
-span{
+.contect-info span{
     display: flex;
     align-items: center;
     gap: 10px;
