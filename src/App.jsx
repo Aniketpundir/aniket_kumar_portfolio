@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import My_work from "./components/Mywork/My_work";
-import Contect from "./components/contect/contect";
+import Contect from "./components/Contect/Contect";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
