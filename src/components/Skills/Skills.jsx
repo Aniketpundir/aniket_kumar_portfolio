@@ -71,7 +71,7 @@ const education = [
   },
   {
     id: 3,
-    name: "B-Tech",
+    name: "10th",
     Batch: "Complete in 2019",
     college: "Sunlike High School (Muzaffarnagar)",
   },
