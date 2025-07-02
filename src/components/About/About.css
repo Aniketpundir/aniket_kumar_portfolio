@@ -62,7 +62,7 @@
 }
 
 .About-text p{
-    font-size: 12.5px;
+    font-size: 10px;
     color: #fff;
     font-weight:200;
 }
@@ -70,7 +70,7 @@
 
 @media(max-width:785px){
    .About{
-    margin: 30px;
+    margin: 10px;
 }
 
     .about-content{
