@@ -1,88 +1,227 @@
-.skills{
+/* Root container */
+.skills {
     margin: 40px 10%;
 }
 
-.skills h2{
+.skills h2 {
     color: #fff;
     font-size: 42px;
     text-align: center;
     text-decoration: underline;
 }
 
-.skill-list{
+.skill-list {
     margin-top: 30px;
     width: 100%;
-    display: flex;
-    gap:50px;
+    gap: 50px;
 }
 
-.skil-List{
+.skil-List {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     transition: 0.5s;
     cursor: pointer;
     border-radius: 10px;
+    gap: 3px;
 }
 
-.skil-List:hover{
+.skil-List:hover {
     transform: scale(1.05);
-    box-shadow: 10px 5px 5px 8px #da7d25a3;
+    box-shadow: 5px 5px 5px 8px #da7d256d;
 }
 
-.for-display{
+.skil-List h2 {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+
+.for-display {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
     padding: 30px;
+    transition: 0.5;
 }
 
-.for-display ul li{
-    list-style: none;
-    gap: 30px;
+.for-display span:hover {
+    color: #da7d25b8;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 400;
     color: #fff;
-    font-size: 18px;
+    list-style: none;
+    text-transform: capitalize;
 }
 
-.education{
+.icon {
+    font-size: 28px;
+}
+
+.html {
+    color: #e34c26;
+}
+
+.css {
+    color: #264de4;
+}
+
+.tailwind {
+    color: #38bdf8;
+}
+
+.bootstrap {
+    color: #7952b3;
+}
+
+.js {
+    color: #f0db4f;
+}
+
+.react {
+    color: #61dbfb;
+}
+
+.node {
+    color: #68a063;
+}
+
+.express {
+    color: #ffffff;
+}
+
+.mongo {
+    color: #4db33d;
+}
+
+.mongoose {
+    color: #800000;
+}
+
+.jwt {
+    color: #f7b731;
+}
+
+.api {
+    color: #3498db;
+}
+
+.c {
+    color: #a8b9cc;
+}
+
+.cpp {
+    color: #00599c;
+}
+
+.postman {
+    color: #ff6c37;
+}
+
+.github {
+    color: #fff;
+}
+
+.git {
+    color: #f1502f;
+}
+
+.stack {
+    color: #f39c12;
+}
+
+.brain {
+    color: #8e44ad;
+}
+
+.eye {
+    color: #1abc9c;
+}
+
+.education {
     cursor: pointer;
     transition: 0.5s;
     border-radius: 10px;
 }
 
-.education:hover{
-    padding: 10px;
-    transform: scale(1.05);
-    box-shadow: 10px 5px 5px 8px #da7d25a3;
+.education-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.education-list{
+.education-content .for-display {
+    display: flex;
+}
+
+.education:hover {
+    padding: 10px;
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px 8px #da7d2523;
+}
+
+.education-list {
     color: #fff;
     margin-top: 20px;
 }
 
-.education-list h3{
+.education-list h3 {
     font-size: 26px;
     padding-top: 10px;
 }
 
-.education-list p{
+.education-list p {
     padding: 5px;
 }
 
-hr{
+hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-@media (max-width:1034px){
-    .skill-list{
+@media (max-width: 1034px) {
+    .skill-list {
         flex-direction: column;
     }
 }
 
-@media (max-width:785px){
-    .for-display{
-    grid-template-columns: repeat(2,1fr);
+@media (max-width: 785px) {
+    .for-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
+@media (max-width: 500px) {
+    .skil-List h2 {
+        font-size: 32px;
+    }
+
+    .skil-List .for-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill-item {
+        font-size: 10px;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+    .education-content h2 {
+        font-size: 32px;
+    }
+
+    .education-list h3 {
+        font-size: 25px;
+    }
 }

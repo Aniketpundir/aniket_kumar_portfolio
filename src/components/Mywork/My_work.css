@@ -1,15 +1,12 @@
-.my-work{
-    margin-top: 70px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 90px;
+.my-work {
+  margin: 70px 50px 90px 50px;
 }
 
-.my-work h1{
-    color: #fff;
-    font-size: 52px;
-    text-align: center;
-    margin-bottom: 50px;
+.my-work h1 {
+  color: #fff;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 body {
@@ -20,24 +17,19 @@ body {
 
 .card-wrapper {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   min-height: 100vh;
-  gap: 40px;
-  
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card {
-  background-color: #da7d25a8;
+  background-color: #da7d252f;
   border-radius: 16px;
   max-width: 350px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: 0.5s;
 }
+
 
 .card-image {
   width: 100%;
@@ -45,43 +37,63 @@ body {
   object-fit: cover;
 }
 
+.card-content {
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin: 0px 0 5px;
+  text-align: center;
+}
+
+.card-desc {
+  font-size: 16px;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
 .button-group {
   display: flex;
   justify-content: space-around;
-  padding: 16px;
+  gap: 20px;
 }
 
 .card-button {
-  width: 50px;
-  height: 50px;
+  padding: 8px 30px;
   background-color: white;
   border: none;
-  border-radius: 50%;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.5;
+  transition: transform 0.3s ease;
 }
 
-.card-button:hover{
-    transform: scale(1.05);
+.card-button:hover {
+  transform: scale(1.1);
 }
 
-@media (max-width:1014px){
-    .card-wrapper{
-        grid-template-columns: repeat(3,1fr);
-    }
+@media (max-width: 1014px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media (max-width:785px){
-    .card-wrapper{
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 785px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width:550px){
-    .card{
-        margin-left: 5px;
-    }
-    .card-wrapper{
-        grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 550px) {
+  .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    margin-left: 5px;
+  }
 }

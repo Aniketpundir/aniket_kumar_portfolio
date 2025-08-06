@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
           <div className="hero-text-section">
             <div className="hero-text">
-              <h1>I'm Aniket Kumar, Frontend developer</h1>
+              <h1>I'm Aniket Kumar, Mern Stack developer</h1>
             </div>
             <div className="hero-button">
               <AnchorLink className="anchor-link" offset={50} href="#contact">
