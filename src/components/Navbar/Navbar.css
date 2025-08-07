@@ -1,23 +1,23 @@
-.Navbar{
+.Navbar {
     margin: 20px 50px;
 }
 
-.menu_open{
+.menu_open {
     display: none;
 }
 
-.Navbar-container{
+.Navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar-left h2{
+.navbar-left h2 {
     color: #fff;
     font-size: 25px;
 }
 
-.navbar-middle{
+.navbar-middle {
     margin-left: 100px;
     display: flex;
     gap: 25px;
@@ -26,22 +26,22 @@
     align-items: center;
 }
 
-.anchor-link{
+.anchor-link {
     text-decoration: none;
 }
 
-.navbar-middle p{
+.navbar-middle p {
     color: #fff;
     font-size: 20px;
     transition: 0.5s;
 }
 
-.navbar-middle p:hover{
+.navbar-middle p:hover {
     border-bottom: 1px solid #DA7C25;
     transition: .5s;
 }
 
-.navbar-right button{
+.navbar-right button {
     background: #DA7C25;
     padding: 10px 30px;
     border-radius: 30px;
@@ -53,39 +53,47 @@
     margin-top: -9px;
 }
 
-.Navbar-container button:hover{
+.Navbar-container button:hover {
     transform: scale(1.05);
 }
 
-@media (max-width:785px){
-    .menu_open{
-        margin-left: 100%;
-        text-align: right;
+@media (max-width:785px) {
+    .menu_open {
         display: block;
-}
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 3;
+        /* Make sure it's above the navbar */
+        font-size: 28px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-    .navbar-left{
+    .navbar-left {
         align-items: center;
         justify-content: start;
-}
+    }
 
-    .navbar-middle{
+    .navbar-middle {
         flex-direction: column;
         gap: 100px;
         align-items: center;
         justify-content: start;
     }
 
-    .navbar-right{
+    .navbar-right {
         margin-left: 50px;
     }
 
-    .Navbar-container{
+    .Navbar-container {
         justify-content: start;
         position: fixed;
         flex-direction: column;
         align-items: start;
-        top:0;
+        top: 0;
         gap: 70px;
         background-color: #1F0016;
         width: 350px;
