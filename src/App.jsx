@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import My_work from "./components/Mywork/My_work";
 import Contect from "./components/Contect/Contect";
 import Footer from "./components/Footer/Footer";
+import Certificate from "./components/certificate/Certificate";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <My_work />
+      <Certificate />
       <Contect />
       <Footer />
     </>
