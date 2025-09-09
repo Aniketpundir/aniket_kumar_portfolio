@@ -6,6 +6,7 @@ import shopper from "../../assets/shopper.png";
 import trippy from "../../assets/trippy.png";
 import zayka from "../../assets/zayka.png";
 import card from "../../assets/card.png";
+import resumePlatform from "../../assets/resume-platform.png"
 
 const mywork = [
   {
@@ -55,6 +56,14 @@ const mywork = [
     img: zayka,
     view_link: "https://zaykaxpress.netlify.app/",
     Github_link: "https://github.com/Aniketpundir/zaykaExpress_food",
+  },
+  {
+    id: 7,
+    title: "Resume Platform",
+    description: "The Resume Platform is a MERN-based web app that helps users easily create, manage, and download professional resumes. It offers secure authentication, a structured resume builder form, and dashboard management. Users can store multiple versions, edit details anytime, and generate clean PDF resumes—making job applications faster and more organized.",
+    img: resumePlatform,
+    view_link: "https://resume-platform.netlify.app/",
+    Github_link: "https://github.com/Aniketpundir/resume-platform",
   },
 ];
 
